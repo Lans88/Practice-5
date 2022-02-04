@@ -1,0 +1,84 @@
+//Task 1: создать массив дни в месяцах, распечатать используя цикл соответствие количество дней в месяце
+print("Task 1:")
+var daysInMounth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+var mounht = "Apr"
+for _ in daysInMounth {
+    if mounht == "Jan" {
+        print ("In \(mounht) is \(daysInMounth[0]) days.")
+    }
+    if mounht == "Feb" {
+        print ("In \(mounht) is \(daysInMounth[1]) days.")
+    }
+    if mounht == "Mar" {
+        print("In \(mounht) is \(daysInMounth[2]) days.")
+    }
+    if mounht == "Apr" {
+        print ("In \(mounht) is \(daysInMounth[3]) days.")
+    }
+    if mounht == "May" {
+        print ("In \(mounht) is \(daysInMounth[4]) days.")
+    }
+    if mounht == "Jun" {
+        print ("In \(mounht) is \(daysInMounth[5]) days.")
+    }
+    if mounht == "Jul" {
+        print ("In \(mounht) is \(daysInMounth[6]) days.")
+    }
+    if mounht == "Aug" {
+        print ("In \(mounht) is \(daysInMounth[7]) days.")
+    }
+    if mounht == "Sep" {
+        print ("In \(mounht) is \(daysInMounth[8]) days.")
+    }
+    if mounht == "Oct" {
+        print ("In \(mounht) is \(daysInMounth[9]) days.")
+    }
+    if mounht == "Nov" {
+        print ("In \(mounht) is \(daysInMounth[10]) days.")
+    }
+    if mounht == "Dec" {
+        print ("In \(mounht) is \(daysInMounth[11]) days.")
+    }
+}
+
+//Task 2: создать отдельно if и отдельно switch программы, которые будут проверять отдельно возраст человека и выводить соответствующее сообщение на консоль
+print("Task 2:")
+var age = 33
+if age > 0 && age < 7 {
+    print ("ходит в садик")
+}
+if age >= 7 && age < 18 {
+    print("ходит в школу")
+}
+if age >= 18 && age < 23 {
+    print("ходит в универ")
+}
+if age >= 23 && age <= 64 {
+    print("ходит на работу")
+}
+if age >= 65 {
+    print ("пора на пенсию")
+}
+switch age {
+case 0...6:
+    print ("ходит в садик")
+case 7...17:
+    print ("ходит в школу")
+case 18...23:
+    print ("ходит в универ")
+case 24...64:
+    print ("ходит на работу")
+case 65...:
+    print("пора на пенсию")
+default:
+    print("некорректный возраст")
+}
+
+//Task 4: создать цикл в цикле, в первом 200 итераций, во втором 15, после выход из всех циклов
+for i in 1...200 {
+    for j in 1...15 {
+        print("Цикл работает")
+        break
+    }
+    break
+}
